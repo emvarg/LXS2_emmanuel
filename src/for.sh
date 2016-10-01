@@ -1,11 +1,9 @@
 #!/bin/bash
 
-for OBJ in casa perro gato
+PROY_PATH=../proyectos/proyecto1/
+
+for OBJ in bashrc dhcpd.conf file file2
 do
-	echo el primer elemento es un $OBJ en la lista del for
+	chmod 750 ../misc/$OBJ
 done
 
-
-el primer elemento es un casa en la lista del for
-el primer elemento es un perro en la lista del for
-el primer elemento es un gato en la lista del for
