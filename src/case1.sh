@@ -9,18 +9,18 @@ DISTRO=$1
 # Las funciones se deben definir antes de ser llamadas
 mensaje ()
 {
-echo "Distribución $DISTRO soportada"
+echo "Distribución $1 soportada"
 }
 
 case "$DISTRO" in
 	Ubuntu)
-		mensaje
+		mensaje $DISTRO
 	;;
 	Centos)
-		mensaje
+		mensaje $DISTRO
 	;;
 	Fedora)
-		mensaje
+		mensaje $DISTRO
 	;;
 	*)
 		echo "Distro no soportada"
