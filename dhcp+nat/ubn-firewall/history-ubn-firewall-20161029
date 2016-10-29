@@ -1,0 +1,64 @@
+    1  ip -4 addr 
+    2  sudo apt-get update ; sudo apt-get -y upgrade
+    3  sudo reboot 
+    4  sudo apt-get update ; sudo apt-get -y upgrade
+    5  sudo apt-get install nmap
+    6  sudo apt-get install nmap git 
+    7  sudo locale
+    8  sudo locale-gen "en_US.UTF-8"
+    9  sudo dpkg-reconfigure locales
+   10  vim .gitconfig 
+   11  ls
+   12  git clone https://github.com/emvarg/LXS2_emmanuel.git
+   13  ls
+   14  cd LXS2_emmanuel/
+   15  ls
+   16  git status
+   17  cd ..
+   18  ls
+   19  ip -4 addr 
+   20  exit 
+   21  sudo shutdown -h now 
+   22  ls
+   23  route -n
+   24  ip -4 addr
+   25  ip -4 addr 
+   26  ping 10.0.0.7
+   27  ssh uk@lolo.emate.ucr.ac.cr
+   28  sudo su -
+   29  sudo su -
+   30  ssh 10.0.0.7
+   31  sudo su -
+   32  ls
+   33  ip -4 addr 
+   34  netsat -ltun
+   35  netstat -ltun
+   36  netstat -ltunp
+   37  netstat -ltuna
+   38  netstat -ltunap
+   39  netstat -a
+   40  sudo su -
+   41  vim iptables.new
+   42  ping 10.0.0.7
+   43  sudo su -
+   44  ls
+   45  cat iptables.new 
+   46  cd 
+   47  ls
+   48  ssh 10.0.0.7
+   49  cd LXS2_emmanuel/
+   50  ls
+   51  git pull origin master 
+   52  cd dhcp+nat/
+   53  ls
+   54  cd cnt-00/
+   55  ls
+   56  cd ..
+   57  ls
+   58  mkdir ubn-firewall
+   59  ls
+   60  cd ubn-firewall/
+   61  ls
+   62  history 
+   63  ls
+   64  history > history-$HOSTNAME-`date +%Y%m%d`

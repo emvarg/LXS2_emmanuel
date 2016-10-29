@@ -1,0 +1,82 @@
+    1  cd /etc/dhcp/
+    2  ls
+    3  vim dhcpd.conf
+    4  fg
+    5  service isc-dhcp-server force-reload 
+    6  service isc-dhcp-server restart 
+    7  ls
+    8  apt-cache search isc-dhcp-server
+    9  cd /etc/dhcp/
+   10  ls
+   11  ls -l
+   12  apt-get install isc-dhcp-server
+   13  ls
+   14  ls -l
+   15  vim dhcpd.conf 
+   16  grep -e "#" -v dhcpd.conf 
+   17  grep -e "#" -v dhcpd.conf | sed '/^\s*$/d'
+   18  grep -e "#" -v dhcpd.conf | sed '/^\s*$/d' > dhcpd.conf.new
+   19  ls
+   20  cp dhcpd.conf dhcpd.conf.orig
+   21  mv dhcpd.conf.new dhcpd.conf
+   22  vim dhcpd.conf
+   23  ps aux | grep dhcpd
+   24  cd ../default/
+   25  pwd
+   26  ls
+   27  vim isc-dhcp-server 
+   28  ip -4 addr 
+   29  ifconfig 
+   30  ifconfig --all
+   31  ifconfig -all
+   32  ifconfig all
+   33  ifconfig --all 
+   34  ifconfig -a 
+   35  fg
+   36  cd /etc/network/interfaces.d/
+   37  ls
+   38  cd ..
+   39  ls
+   40  vim interfaces
+   41  ifup ens6
+   42  ifconfig 
+   43  service isc-dhcp-server start
+   44  ps aux | grep dhcpd
+   45  cd /var/log/
+   46  ls
+   47  tail -f syslog 
+   48  less syslog 
+   49  grep dhcpd syslog 
+   50  grep dhcpd syslog | tail -f
+   51  grep dhcpd syslog | tail
+   52  watch -n 1 "grep dhcpd syslog | tail"
+   53  iptables -S
+   54  iptables -L
+   55  iptables -t nat 
+   56  iptables -t nat -L
+   57  ls
+   58  exit 
+   59  iptables-save 
+   60  ls /etc/init.d/
+   61  iptables -A INPUT -i lo -j ACCEPT
+   62  iptables -S
+   63  iptables -A FORWARD -i ens3 -o ens6 -p tcp -m conntrack -ctstate  RELATED,ESTABLISHED -j ACCEPT
+   64  iptables -A FORWARD -i ens3 -o ens6 -p tcp -m conntrack --ctstate  RELATED,ESTABLISHED -j ACCEPT
+   65  iptables -S
+   66  ls
+   67  iptables-save 
+   68  iptables-save > iptables.log
+   69  vim iptables.log 
+   70  iptables -i ens6 -o ens3 -p tcp -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+   71  iptables -A INPUT -i ens6 -o ens3 -p tcp -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+   72  iptables -A FORWARD -i ens6 -o ens3 -p tcp -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+   73  iptables -S
+   74  iptables -A FORWARD -i ens6 -o ens3 -j ACCEPT
+   75  iptables -S
+   76  iptables -t nat -S
+   77  iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
+   78  cat /proc/sys/net/ipv4/ip_forward
+   79  echo 1 > /proc/sys/net/ipv4/ip_forward
+   80  cat /proc/sys/net/ipv4/ip_forward
+   81  history 
+   82  history > /home/sysadmin/LXS2_emmanuel/dhcp+nat/ubn-firewall/history-$HOSTNAME-`date +%Y%m%d`_root
