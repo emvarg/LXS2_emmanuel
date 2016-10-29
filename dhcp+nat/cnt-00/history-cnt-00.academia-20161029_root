@@ -1,0 +1,32 @@
+    1  cd /etc/sysconfig/
+    2  ls
+    3  cd network-scripts/
+    4  pwd
+    5  ls -l
+    6  ip -4 addr 
+    7  ifconfig 
+    8  ifconfig --all
+    9  ifconfig 
+   10  ls
+   11  ls /home/sysadmin/
+   12  ls /home/sysadmin/LXS2_emmanuel/
+   13  yum install screen
+   14  route -n
+   15  ping yahoo.com
+   16  ls
+   17  ifconfig 
+   18  ls
+   19  cp ifcfg-ens3 ifcfg-ens6
+   20  vim ifcfg-ens6
+   21  uuidgen ens6
+   22  vim ifcfg-ens6
+   23  vim /etc/fstab 
+   24  ifconfig 
+   25  ifup ens6
+   26  ifconfig 
+   27  vim ifcfg-ens3
+   28  lls
+   29  ls
+   30  shutdown -h now 
+   31  history 
+   32  history  > /home/sysadmin/LXS2_emmanuel/history/history-$HOSTNAME-`date +%Y%m%d`_root
