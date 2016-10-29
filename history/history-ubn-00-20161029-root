@@ -1,0 +1,141 @@
+    1  cd /var/www/
+    2  ls
+    3  cd html/
+    4  ls
+    5  ln -s /home/sysadmin/Documents/deb-00.ova deb-00.ova
+    6  ls -l
+    7  ip -4 addr 
+    8  mv index.html 1.html
+    9  ls
+   10  ls -l
+   11  sudo chown www-data:www-data deb-00.ova 
+   12  ls -ol
+   13  ls -l
+   14  exit 
+   15  cd /dev/
+   16  ls
+   17  cd input/
+   18  ls
+   19  cat mouse0 
+   20  ls ..
+   21  ls .
+   22  history > /home/sysadmin/LXS2_emmanuel/history/history-$HOSTNAME-`date +%Y%m%d`-root
+   23  cd /etc/libvirt/
+   24  ls
+   25  cd qemu/
+   26  ls
+   27  cd networks/
+   28  ls
+   29  ls -l
+   30  vim default.xml 
+   31  cat /home/sysadmin/.gitconfig 
+   32  fg
+   33  vim default.xml 
+   34  cp default.xml ~
+   35  cd 
+   36  ls
+   37  vim default.xml 
+   38  ls
+   39  cat default.xml 
+   40  mv default.xml red-privada.xml
+   41  mv red-privada.xml /tmp/
+   42  ls
+   43  chown sysadmin:sysadmin /tmp/red-privada.xml 
+   44  cd /etc/libvirt/
+   45  ls
+   46  cd qemu/
+   47  ls
+   48  cd networks/
+   49  ls
+   50  tree
+   51  ip -4 addr 
+   52  ls
+   53  cd /etc/
+   54  ls
+   55  cd libvirt/
+   56  ls
+   57  cd qemu/
+   58  ls
+   59  cd /etc/libvirt/qemu
+   60  ls
+   61  cd networks/
+   62  ls
+   63  cp default.xml /home/sysadmin/
+   64  chown sysadmin:sysadmin /home/sysadmin/default.xml 
+   65  cd /var/www/
+   66  ls
+   67  cd html/
+   68  ls
+   69  ls -l
+   70  man ln
+   71  ip -4 addr 
+   72  ls -l
+   73  ls /var/lib/libvirt/images/
+   74  ls /var/lib/libvirt/images/ -l
+   75  cd /var/lib/libvirt/images/
+   76  ls -l
+   77  sudo chmod 777 *
+   78  ls -l
+   79  cd /var/www/html/
+   80  ls -l
+   81  man ln
+   82  ln -s /var/lib/libvirt/images/cnt-00.img cnt-00.img
+   83  ln -s /var/lib/libvirt/images/ubn-firewall.img ubn-firewall.img
+   84  ls -l 
+   85  cp /etc/libvirt/qemu/cnt-00.xml .
+   86  cp /etc/libvirt/qemu/ubn-firewall.xml .
+   87  ls
+   88  ls- l
+   89  ls -l
+   90  sudo chmod 777 *
+   91  ls -l 
+   92  cd /var/lib/libvirt/
+   93  cd images/
+   94  ls
+   95  cp -v  * /media/sysadmin/JOSHUA/maquinas/
+   96  cd /var/lib/libvirt/
+   97  ls
+   98  cd images/
+   99  ls
+  100  cp -v * /media/sysadmin/KINGSTON/
+  101  #cp -v * /media/sysadmin/RComputers/
+  102  fdisk -l
+  103  cp -v * /media/sysadmin/RComputers/
+  104  exit 
+  105  ls -l /var/lib/libvirt/images/
+  106  ls
+  107  cd /etc/libvirt/
+  108  ls
+  109  cd storage/
+  110  l;s
+  111  ls
+  112  vim default.xml 
+  113  exit 
+  114  passwd 
+  115  pwd
+  116  cp /home/sysadmin/Downloads/100%[======================================>] 2 785       --.-K/s   in 0s      
+  117  2016-10-15 10:42:45 (188 MB/s) - ‘ubn-firewall.xml’ saved [2785/2785]
+  118  sysadmin@ubn-00:~$ sudo su - 
+  119  root@ubn-00:~# 
+  120  #mv /home/sysadmin/Downloads/cnt-00.img /var/lib/libvirt/images/
+  121  ls -l /var/lib/libvirt/images/
+  122  cd /var/lib/libvirt/images/
+  123  ls
+  124  ls -l
+  125  chown root:root cnt-00.img 
+  126  chown root:root ubn-firewall.img 
+  127  ls -l
+  128  id sysadmin 
+  129  cd /etc/libvirt/
+  130  ls
+  131  cd qemu/
+  132  ls
+  133  cd q
+  134  ls
+  135  cd networks/
+  136  ls
+  137  vim default.xml 
+  138  iptables -S
+  139  ifconfig 
+  140  history 
+  141  history  > /home/sysadmin/LXS2_emmanuel/history/history-$HOSTNAME-`date +%Y%m%d`

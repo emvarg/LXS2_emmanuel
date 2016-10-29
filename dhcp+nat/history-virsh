@@ -1,0 +1,31 @@
+define cnt-00.xml
+start cnt-00
+list --all
+define ubn-firewall.xml
+start ubn-firewall
+list
+shutdown ubn-firewall
+shutdown cnt-00
+dominfo ubn-firewall
+help autostart
+autostart ubn-firewall
+dominfo ubn-firewall
+autostart ubn-firewall --disable
+net-list
+net-create LXS2_emmanuel/configs/private-network.xml
+net-list
+net-destroy private-network
+net-list
+net-define LXS2_emmanuel/configs/private-network.xml
+net-list
+net-list --all
+net-start private-network
+net-list --all
+net-autostart private-network
+net-list --all
+net-list
+start ubn-firewall
+start cnt-00
+list --all
+exit
+
