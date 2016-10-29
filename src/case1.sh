@@ -11,15 +11,12 @@ VAR3=$3
 # Las funciones se deben definir antes de ser llamadas
 mensaje ()
 {
-echo "Distribución $1 soportada"
-echo "Distribución $2 soportada"
-echo "Distribución $3 soportada"
 
 CONTADOR=1
 
 for i in $@
 do
-	echo "El parametro $CONTADOR de la función es $i"
+	echo "Distribución $i soportada"
 	let "CONTADOR=$CONTADOR+1"
 done
 
